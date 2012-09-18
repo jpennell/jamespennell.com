@@ -12,8 +12,8 @@ urlpatterns = patterns('',
 )
 
 urlpatterns += patterns('',
-    url(r'^$', redirect_to, {'url': '/posts/'}),
-    url(r'^posts/', include('webapp.apps.posts.urls')),
+    url(r'^$', redirect_to, {'url': '/blog/'}, name='home'),
+    url(r'^blog/', include('webapp.apps.posts.urls')),
 )
 
 if settings.DEBUG:
