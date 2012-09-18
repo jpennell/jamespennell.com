@@ -76,4 +76,5 @@ INSTALLED_APPS = (
     'debug_toolbar',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'webapp.apps.posts',
 )
